@@ -5,6 +5,7 @@ import (
 	"challange1_9Mar/controller"
 
 	"github.com/gin-gonic/gin"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func main() {

@@ -2,14 +2,15 @@ package config
 
 import (
 	"challange1_9Mar/model"
+	"log"
 
 	"github.com/jinzhu/gorm"
 )
 
 func DBInit() *gorm.DB {
-	db, err := gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/godb?charset=utf8&parseTime=True&loc=Local")
+	db, err := gorm.Open("mysql", "root:password@tcp(127.0.0.1:3306)/db_challange2_go")
 	if err != nil {
-		panic("failed to connect database")
+		log.Fatalf("Failed to connect to databases: %v", err)
 	}
 	db.AutoMigrate(model.Person{})
 	return db
