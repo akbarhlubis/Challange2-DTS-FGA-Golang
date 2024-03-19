@@ -69,8 +69,8 @@ func (idb *InDB) CreatePerson(c *gin.Context) {
 	last_name := c.PostForm("last_name")
 
 	// Memasukkan data ke dalam struct
-	person.FirstName = first_name
-	person.LastName = last_name
+	person.First_Name = first_name
+	person.Last_Name = last_name
 
 	// Memasukkan data ke dalam database
 	idb.DB.Create(&person)
@@ -102,8 +102,8 @@ func (idb *InDB) UpdatePerson(c *gin.Context) {
 		}
 	}
 
-	newPerson.FirstName = first_name
-	newPerson.LastName = last_name
+	newPerson.First_Name = first_name
+	newPerson.Last_Name = last_name
 	err = idb.DB.Model(&person).Updates(newPerson).Error
 	if err != nil {
 		result = gin.H{

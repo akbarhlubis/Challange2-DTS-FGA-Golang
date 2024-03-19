@@ -6,8 +6,8 @@ import (
 
 type Person struct {
 	gorm.Model
-	FirstName string
-	LastName  string
+	First_Name string
+	Last_Name  string
 }
 
 type InDB struct {
