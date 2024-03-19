@@ -1,8 +1,8 @@
 package main
 
 import (
-	"challange1_9Mar/config"
-	"challange1_9Mar/controller"
+	"challange2_9Mar/config"
+	"challange2_9Mar/controller"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"

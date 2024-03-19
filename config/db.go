@@ -1,7 +1,7 @@
 package config
 
 import (
-	"challange1_9Mar/model"
+	"challange2_9Mar/model"
 	"log"
 
 	"github.com/jinzhu/gorm"

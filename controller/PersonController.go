@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"challange1_9Mar/model"
+	"challange2_9Mar/model"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

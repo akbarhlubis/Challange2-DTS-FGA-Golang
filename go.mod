@@ -1,4 +1,4 @@
-module challange1_9Mar
+module challange2_9Mar
 
 go 1.22.0
 
